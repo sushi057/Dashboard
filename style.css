@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+:root{
+        --primary: #FCEE0C;
+        --secondary: #03D8F3;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu';
+}
+
+.container{
+    margin: 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 16px; */
+}
+
+.sidebar{
+    border: 1px solid black;
+    grid-row: 1/span 2;
+}
+
+.header{
+    border: 1px solid black;
+    grid-column: 2/ span 3;
+}
+
+.main{
+    grid-column: 2/ span 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.projects{
+    border: 1px solid black;
+    grid-column: 1/3;
+}
+
+.announcements{
+    
+}
+
+.trending{
+    grid-column-start: 3;
+}
+
+/* for layout purpose */
+img{
+    height: 45px;
+
+}
