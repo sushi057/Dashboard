@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 :root{
-    --primary: #FCEE0C;
-    --secondary: #03d7f3;
-    --background: #e1e7f1;
+    --primary: #164e63;
+    --secondary: #0891b2;
+    --background: #cffafe;
+    --main: #ecfeff;
 }
 
 *{
@@ -18,6 +19,7 @@ img{
 
 body{
     font-family: 'Ubuntu';
+    background-color: var(--main);
 }
 
 .container{
@@ -33,7 +35,8 @@ body{
 .sidebar{
     /* border: 1px solid black; */
     grid-row: 1/span 2;
-    /* background-color: var(--secondary); */
+    background-color: var(--primary);
+    color: white;
     padding: 24px;
 
 }
@@ -72,8 +75,8 @@ body{
 .header{
     /* border: 1px solid black; */
     grid-column: 2/ span 3;
-    /* height: 75%; */
-    /* margin-bottom: 10px; */
+    /* border-bottom: 2px solid var(--primary); */
+    box-shadow: 0 5px 2px var(--main);
 }
 
 .top-bar{
@@ -96,16 +99,13 @@ input{
     padding: 16px;
     font-size: 16px;
     outline: 0;
+    color: white;
 }
 
 .search-bar, .profile{
     display: flex;
     align-items: center;
     gap: 26px;
-}
-
-.profile img{
-    height: 32px;
 }
 
 .profile strong{
@@ -115,7 +115,7 @@ input{
 
 #picture{
     height: 72px;
-    width: 64px;
+    /* width: 64px; */
     border-radius: 50%;
 }
 
@@ -135,7 +135,6 @@ input{
 
 .profile-icon img{
     height: 96px;
-    width: 80px;
     border-radius: 50%;
     margin-right: 16px;
 }
@@ -172,8 +171,7 @@ input{
     grid-auto-rows: 50%;
     gap: 36px;
     padding: 16px 36px;
-    /* background-color: var(--background); */
-    margin-top: 24px;
+    background-color: var(--background);
 }
 
 .projects{
@@ -198,9 +196,11 @@ input{
 }
 
 .article-item{
-    border: 1px solid black;
+    /* border: 1px solid var(--primary); */
+    background-color: var(--main);
+    outline: 0;
     padding: 30px 36px;
-    border-left: 12px solid black;
+    border-left: 12px solid var(--primary);
     border-radius: 8px;
     font-size: 18px;
 }
@@ -219,9 +219,15 @@ input{
 }
 
 .announcements{
-    /* border: 1px solid black; */
+    /* background-color: var(--main); */
+    border-radius: 12px;
     padding: 24px;
     /* position: relative; */
+}
+
+.announcements-conatiner{
+    background-color: var(--main);
+    border-radius: 12px;
 }
 
 .announcements h2{
@@ -256,8 +262,15 @@ input{
     font-size: 1.6rem;
 }
 
+.trending-contents{
+    background-color: var(--main);
+    border-radius: 12px;
+    padding: 12px;
+}
+
 .trending img{
     height: 72px;
+    width: 64px;
     border-radius: 50%;
     margin-right: 20px;
 }
@@ -268,6 +281,10 @@ input{
     gap: 4px;
     margin-bottom: 24px;
     padding: 0 44px;
+}
+
+.trending-text p{
+    margin-bottom: 4px;
 }
 
 li{
