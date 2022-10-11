@@ -238,11 +238,27 @@ input{
 
 .trending{
     grid-column: 3/4;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    margin: 8px 36px;
+    padding: 16px;
+}
+
+.trending h2{
+    margin-bottom: 36px;
+    font-size: 1.6rem;
+}
+
+.trending img{
+    height: 72px;
+    border-radius: 50%;
+
 }
 
 .trending-items{
     display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 24px;
 }
 
 li{
