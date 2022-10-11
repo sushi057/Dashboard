@@ -2,7 +2,7 @@
 
 :root{
     --primary: #FCEE0C;
-    --secondary: #03D8F3;
+    --secondary: #03d7f3d2;
 }
 
 *{
@@ -11,14 +11,19 @@
     box-sizing: border-box;
 }
 
+img{
+    height: 45px;
+}
+
+
 body{
     font-family: 'Ubuntu';
 }
 
 .container{
-    margin: 8px;
+    /* margin: 8px; */
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 400px repeat(3, 1fr); 
     /* gap: 16px; */
 }
 
@@ -27,15 +32,38 @@ body{
 .sidebar{
     border: 1px solid black;
     grid-row: 1/span 2;
+    background-color: var(--secondary);
+    padding: 24px;
+
 }
 
 .logo, .item{
     display: flex;
     align-items: center;
+    gap: 12px;
 }
 
-.top-items{
-    margin-bottom: 3.5rem;
+.logo img{
+    height: 72px;
+}
+
+.logo{
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.top-items, .bottom-items{
+    margin-bottom: 7rem;
+    font-size: 1.6rem;
+}
+
+.item img{
+    height: 42px;
+    margin-left: 12px;
+}
+
+.item{
+    margin: 16px auto;
 }
 
 /* Header Section */
@@ -70,6 +98,7 @@ body{
 .buttons ul{
     display: flex;
 }
+
 
 /* Main Section */
 
@@ -116,11 +145,6 @@ body{
 
 .trending-items{
     display: flex;
-}
-
-/* for layout purpose */
-img{
-    height: 45px;
 }
 
 li{
