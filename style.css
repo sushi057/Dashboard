@@ -170,7 +170,7 @@ input{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-auto-rows: 50%;
-    gap: 24px;
+    gap: 36px;
     padding: 16px 36px;
     /* background-color: var(--background); */
     margin-top: 24px;
@@ -220,10 +220,8 @@ input{
 
 .announcements{
     /* border: 1px solid black; */
-    /* grid-column-start: 2; */
-    /* grid-row: span 1; */
     padding: 24px;
-    /* max-width:max-content; */
+    /* position: relative; */
 }
 
 .announcements h2{
@@ -237,6 +235,7 @@ input{
     padding: 16px;
     border-bottom: 1px solid gray;
 }
+
 .announcement-items h3{
     margin-bottom: 8px;
 }
@@ -252,27 +251,15 @@ input{
     height: 25px;
 }
 
-.projects h2{
-    grid-column: span 3;
-}
-
-.trending{
-    grid-column: 2/3;
-    grid-row-start: 2;
-    /* border: 1px solid black; */
-    margin: 8px 36px;
-    padding: 16px;
-}
-
 .trending h2{
-    margin-bottom: 36px;
+    margin: 36px 0;
     font-size: 1.6rem;
 }
 
 .trending img{
     height: 72px;
     border-radius: 50%;
-
+    margin-right: 20px;
 }
 
 .trending-items{
@@ -280,6 +267,7 @@ input{
     align-items: center;
     gap: 4px;
     margin-bottom: 24px;
+    padding: 0 44px;
 }
 
 li{
