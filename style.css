@@ -46,6 +46,19 @@ body{
     align-items: center;
 }
 
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-tag, .buttons{
+    display: flex;
+    align-items: center;
+}
+
+.buttons ul{
+    display: flex;
+}
 
 /* Main Section */
 
@@ -71,5 +84,8 @@ body{
 /* for layout purpose */
 img{
     height: 45px;
+}
 
+li{
+    list-style-type: none;
 }
