@@ -38,7 +38,6 @@ body{
     background-color: var(--primary);
     color: white;
     padding: 24px;
-
 }
 
 .logo, .item{
@@ -51,9 +50,14 @@ body{
     height: 72px;
 }
 
+.logo h1{
+    color: black;
+}
+
 .logo{
     margin-bottom: 3rem;
     font-size: 1.3rem;
+    filter: invert();
 }
 
 .top-items, .bottom-items{
@@ -64,6 +68,7 @@ body{
 .item img{
     height: 42px;
     margin-left: 12px;
+    filter: invert();
 }
 
 .item{
